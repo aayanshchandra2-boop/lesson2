@@ -1,13 +1,14 @@
 class myClass:
-    __privateVar=27;
+    __privateVar = 27
 
     def __privateMeth(self):
-        print("i'm inside class myClass")
-    
-    def hello(self):
-        print("private variable value",myClass.__privateVar)
-        
-foo = myClass()
-foo = hello()
-foo.__privateMeth
+        print("I'm inside class myClass")
 
+    def hello(self):
+        print("private variable value:", myClass._myClass__privateVar)
+        self.__privateMeth()
+
+
+foo = myClass()
+foo.hello()
+foo._myClass__privateMeth()
