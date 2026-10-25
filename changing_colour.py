@@ -41,4 +41,3 @@ def main():
       clock.tick(90)  
     pygame.quit()  
 if __name__ == "__main__":
-   
